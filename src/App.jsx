@@ -36,7 +36,8 @@ const App = () => {
         } else if (val === "=") {
             let sum = currentTotal.join("");
             let newSum = evaluate(sum);
-            setTotal([newSum.toFixed(2)])
+            let display = parseFloat(newSum.toFixed(2))
+            setTotal([display])
         } else {
             if (currentTotal.length >= 11) {
                 return
