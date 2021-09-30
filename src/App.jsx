@@ -1,8 +1,9 @@
 import "./App.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import { evaluate } from "mathjs"
 
 const App = () => {
+
     const [total, setTotal] = useState([0])
     let buttons = [7, 8, 9, "+", 4, 5, 6, "-", 1, 2, 3, "*", "AC", 0, "=", "/"]
 
@@ -46,7 +47,6 @@ const App = () => {
                 setTotal([...currentTotal])
             }
         }
-
     }
     return (
         <div id="body">
@@ -63,8 +63,6 @@ const App = () => {
                 </div>
             </div>
         </div>
-
-
     )
 }
 
